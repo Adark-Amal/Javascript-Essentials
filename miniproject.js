@@ -13,4 +13,4 @@ function change(){
   };
 };
 
-document.getElementById("change").addeventListener("click", change);
+document.getElementById("change").addEventListener("click", change);
