@@ -5,7 +5,12 @@ function change(){
   // iterate to view name of each dropdown and each value in dropdown menu
   for(let i = 0; i < dropdowns; i++)
   {
-    console.log(dropdowns[i].getAttribute("id"));   // displays each id name
-    console.log(dropdowns[i].value);                // displays each dropdown value
+    let dropdownAttribute = dropdowns[i].getAttribute("id");   // assign dropdown property name to variable
+    let dropdownValues = dropdowns[i].value;                // assign dropdown value to variable 
+    let div = document.getElementById("modify");            // assign div element to variable
+    
+    div.style[dropdownAttribute] = dropdownValues;
   };
 };
+
+document.getElementById("change").addeventListener("click", change);
