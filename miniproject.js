@@ -5,7 +5,7 @@ let div = document.getElementById("modify");            // assign div element to
 
 function change(){
   // iterate to view name of each dropdown and each value in dropdown menu
-  for(let i = 0; i < dropdowns; i++)
+  for(let i = 0; i < dropdowns.length; i++)
   {
     let dropdownAttribute = dropdowns[i].getAttribute("id");   // assign dropdown property name to variable
     let dropdownValues = dropdowns[i].value;                // assign dropdown value to variable 
